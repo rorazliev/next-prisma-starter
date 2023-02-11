@@ -1,13 +1,16 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import nc from 'next-connect';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-type Data = {
-  name: string;
-};
+const handler = nc<NextApiRequest, NextApiResponse>({
+  onError: (err, req, res, next) => {
+    res.status(500).json({ message: 'Internal Server Error' });
+  },
 
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
-  res.status(200).json({ name: 'John Doe' });
-}
+  onNoMatch: (req, res) => {
+    res.status(404).json({ message: 'Not Found' });
+  },
+}).get((req, res) => {
+  res.status(200).json({ message: 'Hello World!' });
+});
+
+export default handler;
