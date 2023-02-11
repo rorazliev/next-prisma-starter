@@ -14,6 +14,8 @@
     "format:check": "prettier . --check",
     "types:check": "tsc --pretty --noEmit",
     "code-quality:check": "npm run lint:check && npm run format:check && npm run types:check",
+    "docker:up": "docker compose up -d db",
+    "docker:down": "docker compose down && rm -rf db",
     "db:migrate": "prisma migrate dev",
     "db:generate": "prisma generate",
     "db:seed": "prisma db seed",
