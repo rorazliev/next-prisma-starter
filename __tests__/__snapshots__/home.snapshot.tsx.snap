@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <main
+    class="flex-1 px-5 py-10"
+    role="main"
+  >
+    <section
+      class="w-full flex flex-col items-center justify-center py-10"
+      style="opacity: 0;"
+    >
+      <h1
+        class="font-semibold text-4xl pb-10 md:text-center leading-normal md:leading-none text-blue-600"
+      >
+        Welcome to Next.js Prisma Starter!
+      </h1>
+      <p
+        class="text-2xl leading-normal md:leading-none md:text-center"
+      >
+        Get started by editing
+         
+        <code
+          class="text-[1.35rem]"
+        >
+          views/Home.tsx
+        </code>
+      </p>
+    </section>
+    <section
+      class="max-w-2xl mx-auto py-10"
+    >
+      <div
+        class="grid md:grid-cols-2 gap-5"
+      >
+        <div
+          style="opacity: 0;"
+        >
+          <a
+            class="block bg-white w-full p-8 border rounded-xl transition-all duration-150 ease-linear hover:shadow-md hover:text-blue-600"
+            href="https://nextjs.org/docs"
+          >
+            <h2
+              class="text-2xl mb-5 leading-none"
+            >
+              Documentation
+               →
+            </h2>
+            <p
+              class="text-lg leading-normal"
+            >
+              Find in-depth information about Next.js features and API.
+            </p>
+          </a>
+        </div>
+        <div
+          style="opacity: 0;"
+        >
+          <a
+            class="block bg-white w-full p-8 border rounded-xl transition-all duration-150 ease-linear hover:shadow-md hover:text-blue-600"
+            href="https://nextjs.org/learn"
+          >
+            <h2
+              class="text-2xl mb-5 leading-none"
+            >
+              Learn
+               →
+            </h2>
+            <p
+              class="text-lg leading-normal"
+            >
+              Learn about Next.js in an interactive course with quizzes!
+            </p>
+          </a>
+        </div>
+        <div
+          style="opacity: 0;"
+        >
+          <a
+            class="block bg-white w-full p-8 border rounded-xl transition-all duration-150 ease-linear hover:shadow-md hover:text-blue-600"
+            href="https://github.com/vercel/next.js/tree/canary/examples"
+          >
+            <h2
+              class="text-2xl mb-5 leading-none"
+            >
+              Examples
+               →
+            </h2>
+            <p
+              class="text-lg leading-normal"
+            >
+              Discover and deploy boilerplate example Next.js projects.
+            </p>
+          </a>
+        </div>
+        <div
+          style="opacity: 0;"
+        >
+          <a
+            class="block bg-white w-full p-8 border rounded-xl transition-all duration-150 ease-linear hover:shadow-md hover:text-blue-600"
+            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          >
+            <h2
+              class="text-2xl mb-5 leading-none"
+            >
+              Deploy
+               →
+            </h2>
+            <p
+              class="text-lg leading-normal"
+            >
+              Instantly deploy your Next.js site to a public URL with Vercel.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer
+    class="w-full px-5 flex items-center justify-center select-none"
+    role="contentinfo"
+  >
+    <div
+      class="w-full max-w-5xl py-8 flex items-center justify-center border-t border-slate-300"
+    >
+      <span
+        class="text-sm leading-none"
+      >
+        Made with ❤️ by
+         
+        <a
+          class="font-medium text-blue-600 hover:underline"
+          href="https://github.com/rorazliev"
+        >
+          Ruslan Orazliev
+        </a>
+      </span>
+    </div>
+  </footer>
+</div>
+`;
