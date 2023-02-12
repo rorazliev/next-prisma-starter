@@ -1,0 +1,35 @@
+name: 'ci'
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, reopened, edited, synchronize]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    env:
+      NEXTAUTH_SECRET: ${{ secrets.NEXTAUTH_SECRET }}
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Installation
+        run: npm install
+
+      - name: Compose
+        run: npm run up
+
+      - name: Migrate and Seed
+        run: npm run db:migrate --name ci && npm run db:seed
+
+      - name: Code Quality
+        run: npm run code-quality:check
+
+      - name: Unit Tests
+        run: npm run test:ci
+
+      - name: Build
+        run: npm run build
