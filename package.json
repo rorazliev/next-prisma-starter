@@ -1,7 +1,30 @@
 {
   "name": "next-prisma-starter",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "A starting point for Next.js apps with Prisma",
+  "keywords": [
+    "docker",
+    "github-actions",
+    "jest",
+    "next-auth",
+    "nextjs",
+    "prisma",
+    "tailwindcss",
+    "typescript"
+  ],
   "private": true,
+  "homepage": "https://github.com/rorazliev/next-prisma-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rorazliev/next-prisma-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rorazliev/next-prisma-starter/issues"
+  },
+  "author": {
+    "name": "Ruslan Orazliev",
+    "url": "https://github.com/rorazliev"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -37,7 +60,8 @@
     "react-cookie": "^4.1.1",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.3",
-    "zod": "^3.20.6"
+    "zod": "^3.20.6",
+    "zustand": "^4.3.5"
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
