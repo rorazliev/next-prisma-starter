@@ -19,17 +19,17 @@ jobs:
       - name: Installation
         run: npm install
 
-      - name: Compose
-        run: npm run up
-
-      - name: Migrate and Seed
-        run: npm run db:migrate --name ci && npm run db:seed
-
       - name: Code Quality
         run: npm run code-quality:check
 
       - name: Unit Tests
         run: npm run test:ci
+
+      - name: Compose
+        run: npm run up
+
+      - name: Migrate and Seed
+        run: npm run db:migrate --name ci && npm run db:seed
 
       - name: Build
         run: npm run build
