@@ -76,7 +76,6 @@ For examples, see [`.env.example`](.env.example).
 | `dev`                | Start Next.js app in development mode |
 | `build`              | Build the app for production usage    |
 | `start`              | Start a Next.js production server     |
-| `prepare`            | Enable Git hooks                      |
 | `test`               | Run Jest in watch mode                |
 | `test:ci`            | Run Jest in a CI environment          |
 | `lint`               | Fix the code code                     |
@@ -85,12 +84,13 @@ For examples, see [`.env.example`](.env.example).
 | `format:check`       | Check the code format                 |
 | `types:check`        | Check types                           |
 | `code-quality:check` | Check the code quality                |
-| `db:up`              | Start and run Docker containers       |
-| `db:down`            | Stop Docker containers                |
 | `db:migrate`         | Migrate your database                 |
 | `db:generate`        | Generate types for Prisma Client      |
 | `db:seed`            | Seed your database                    |
 | `db:studio`          | Run Prisma Studio                     |
+| `up`                 | Start and run Docker containers       |
+| `down`               | Stop Docker containers                |
+| `prepare`            | Enable Git hooks                      |
 
 ## Dependencies
 
@@ -118,19 +118,20 @@ Dependencies are managed throuth `package.json`. In the file, you will find two 
 
 ### devDependencies
 
-| Name           | Description                                         |
-| -------------- | --------------------------------------------------- |
-| `@types`       | Dependencies that provide types                     |
-| `autoprefixer` | CSS parser and prefixer                             |
-| `eslint`       | AST-based pattern checker for JavaScript            |
-| `husky`        | Git hooks                                           |
-| `jest`         | JavaScript testing framework                        |
-| `postcss`      | Tool that transforms styles with JavaScript plugins |
-| `prettier`     | Code formatter                                      |
-| `prisma`       | TypeScript-first ORM for Node.js                    |
-| `tailwindcss`  | Utility-first CSS framework                         |
-| `ts-node`      | TypeScript execution environment for Node.js        |
-| `typescript`   | JavaScript superset that provides types             |
+| Name              | Description                                         |
+| ----------------- | --------------------------------------------------- |
+| `@faker-js/faker` | Fake data generator                                 |
+| `@types`          | Dependencies that provide types                     |
+| `autoprefixer`    | CSS parser and prefixer                             |
+| `eslint`          | AST-based pattern checker for JavaScript            |
+| `husky`           | Git hooks                                           |
+| `jest`            | JavaScript testing framework                        |
+| `postcss`         | Tool that transforms styles with JavaScript plugins |
+| `prettier`        | Code formatter                                      |
+| `prisma`          | TypeScript-first ORM for Node.js                    |
+| `tailwindcss`     | Utility-first CSS framework                         |
+| `ts-node`         | TypeScript execution environment for Node.js        |
+| `typescript`      | JavaScript superset that provides types             |
 
 To update dependencies, run the `npm update` command.
 
